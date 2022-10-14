@@ -16,6 +16,7 @@ export const useInput = (initialValue, validations) => {
 
   const handleClear = () => {
     setValue("");
+    setDirty(false);
   };
 
   return {
